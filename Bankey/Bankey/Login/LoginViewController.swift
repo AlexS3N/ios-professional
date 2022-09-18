@@ -75,6 +75,11 @@ extension LoginViewController {
             loginView.trailingAnchor.constraint(equalToSystemSpacingAfter: appDescriptionLabel.trailingAnchor, multiplier: 6)
         ])
         
+//        NSLayoutConstraint.activate([
+//            loginView.topAnchor.constraint(equalToSystemSpacingBelow: appDescriptionLabel.bottomAnchor, multiplier: 4),
+//            appDescriptionLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
+//            appDescriptionLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
+//        ])
         
         // LoginView
         NSLayoutConstraint.activate([
