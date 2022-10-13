@@ -14,6 +14,8 @@
 		042D8BF628D0D46C00BD31A9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D8BF528D0D46C00BD31A9 /* LoginView.swift */; };
 		043640F728D79E0E00473DAA /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043640F628D79E0E00473DAA /* OnboardingContainerViewController.swift */; };
 		043640F928D7AEB100473DAA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043640F828D7AEB100473DAA /* OnboardingViewController.swift */; };
+		043F935728F5ADCC00746748 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F935628F5ADCC00746748 /* UIViewController+Utils.swift */; };
+		043F935928F5B1FE00746748 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F935828F5B1FE00746748 /* MainViewController.swift */; };
 		04A6AA9228F1C53C006F2F81 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6AA9128F1C53C006F2F81 /* LocalState.swift */; };
 		04EDACE028EB806400C4DB17 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDACDF28EB806400C4DB17 /* DummyViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		042D8BF528D0D46C00BD31A9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		043640F628D79E0E00473DAA /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		043640F828D7AEB100473DAA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		043F935628F5ADCC00746748 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		043F935828F5B1FE00746748 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04A6AA9128F1C53C006F2F81 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		04EDACDF28EB806400C4DB17 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,11 +66,12 @@
 		042D8BDE28D0C2BB00BD31A9 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				042D8BDF28D0C2BB00BD31A9 /* AppDelegate.swift */,
+				042D8BF428D0C98300BD31A9 /* Login */,
+				0433E82A28D373FD00E1E850 /* Onboarding */,
 				04A6AA9328F1C634006F2F81 /* Utils */,
 				042D8BF328D0C91D00BD31A9 /* Files */,
-				0433E82A28D373FD00E1E850 /* Onboarding */,
-				042D8BF428D0C98300BD31A9 /* Login */,
-				042D8BDF28D0C2BB00BD31A9 /* AppDelegate.swift */,
+				043F935828F5B1FE00746748 /* MainViewController.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				04A6AA9128F1C53C006F2F81 /* LocalState.swift */,
+				043F935628F5ADCC00746748 /* UIViewController+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -178,11 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043F935728F5ADCC00746748 /* UIViewController+Utils.swift in Sources */,
 				042D8BF628D0D46C00BD31A9 /* LoginView.swift in Sources */,
 				04A6AA9228F1C53C006F2F81 /* LocalState.swift in Sources */,
 				04EDACE028EB806400C4DB17 /* DummyViewController.swift in Sources */,
 				042D8BE428D0C2BB00BD31A9 /* LoginViewController.swift in Sources */,
 				043640F928D7AEB100473DAA /* OnboardingViewController.swift in Sources */,
+				043F935928F5B1FE00746748 /* MainViewController.swift in Sources */,
 				042D8BE028D0C2BB00BD31A9 /* AppDelegate.swift in Sources */,
 				043640F728D79E0E00473DAA /* OnboardingContainerViewController.swift in Sources */,
 			);
