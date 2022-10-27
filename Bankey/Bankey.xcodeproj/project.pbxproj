@@ -26,6 +26,8 @@
 		0461A94A2901FC8B0027BDF8 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461A9492901FC8B0027BDF8 /* NSNotificationName.swift */; };
 		0461A94C290325DB0027BDF8 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461A94B290325DB0027BDF8 /* UITextField+SecureToggle.swift */; };
 		0461A978290724220027BDF8 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461A977290724220027BDF8 /* ShakeyBellView.swift */; };
+		0461A97C290A7EC90027BDF8 /* NSDate+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461A97B290A7EC90027BDF8 /* NSDate+Formatted.swift */; };
+		0461A97E290A89D10027BDF8 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461A97D290A89D10027BDF8 /* AccountSummaryViewController+Networking.swift */; };
 		04A6AA9228F1C53C006F2F81 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6AA9128F1C53C006F2F81 /* LocalState.swift */; };
 		04EDACE028EB806400C4DB17 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDACDF28EB806400C4DB17 /* DummyViewController.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		0461A9492901FC8B0027BDF8 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		0461A94B290325DB0027BDF8 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		0461A977290724220027BDF8 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		0461A97B290A7EC90027BDF8 /* NSDate+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Formatted.swift"; sourceTree = "<group>"; };
+		0461A97D290A89D10027BDF8 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		04A6AA9128F1C53C006F2F81 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		04EDACDF28EB806400C4DB17 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				043F935B28F8738600746748 /* AccountSummaryViewController.swift */,
+				0461A97D290A89D10027BDF8 /* AccountSummaryViewController+Networking.swift */,
 				0461A92E28FAE63D0027BDF8 /* Header */,
 				0461A92F28FAE6540027BDF8 /* Cells */,
 			);
@@ -199,6 +204,7 @@
 				0461A93428FF20060027BDF8 /* CurrencyFormatter.swift */,
 				0461A9492901FC8B0027BDF8 /* NSNotificationName.swift */,
 				0461A94B290325DB0027BDF8 /* UITextField+SecureToggle.swift */,
+				0461A97B290A7EC90027BDF8 /* NSDate+Formatted.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -316,12 +322,14 @@
 				0461A94A2901FC8B0027BDF8 /* NSNotificationName.swift in Sources */,
 				042D8BE428D0C2BB00BD31A9 /* LoginViewController.swift in Sources */,
 				0461A978290724220027BDF8 /* ShakeyBellView.swift in Sources */,
+				0461A97C290A7EC90027BDF8 /* NSDate+Formatted.swift in Sources */,
 				0461A93128FAE68D0027BDF8 /* AccountSummaryCell.swift in Sources */,
 				043640F928D7AEB100473DAA /* OnboardingViewController.swift in Sources */,
 				043F935928F5B1FE00746748 /* MainViewController.swift in Sources */,
 				043F935C28F8738600746748 /* AccountSummaryViewController.swift in Sources */,
 				042D8BE028D0C2BB00BD31A9 /* AppDelegate.swift in Sources */,
 				043640F728D79E0E00473DAA /* OnboardingContainerViewController.swift in Sources */,
+				0461A97E290A89D10027BDF8 /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
