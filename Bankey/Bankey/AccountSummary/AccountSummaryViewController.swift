@@ -137,7 +137,8 @@ extension AccountSummaryViewController {
                 self.profile = profile
 //                self.configureTableHeaderView(with: profile)
             case .failure(let error):
-                print(error.localizedDescription)
+//                print(error.localizedDescription)
+                self.displayError(error)
             }
             group.leave()
         }
@@ -150,6 +151,7 @@ extension AccountSummaryViewController {
 //                self.configureTableCells(with: accounts)
             case .failure(let error):
                 print(error.localizedDescription)
+                self.displayError(error)
             }
             group.leave()
         }
@@ -187,6 +189,46 @@ extension AccountSummaryViewController {
                                          balance: $0.amount)
         }
     }
+    
+    private func showErrorAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func displayError(_ error: NetworkError) {
+        let title: String
+        let message: String
+        switch error {
+        case .serverError:
+            title = "Server Error"
+            message = "Ensure you are connected to the internet. Please try again."
+        case .decodingError:
+            title = "Decoding Error"
+            message = "We could not process your request. Please try again."
+        }
+        self.showErrorAlert(title: title, message: message)
+    }
+//    private func showErrorAlert(error: NetworkError) {
+//
+//        let alert = UIAlertController(title: "Network Error",
+//                                      message: "Please check your network connectivity and try again.",
+//                                      preferredStyle: .alert)
+//        switch error {
+//        case .serverError:
+//            alert.title = "Server Error"
+//            alert.message = "Ensure you are connected to the internet. Please try again."
+//        case .decodingError:
+//            alert.title = "Decoding Error"
+//            alert.message = "We could not process your request. Please try again."
+//        }
+//
+//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//        present(alert, animated: true, completion: nil)
+//    }
 }
 
 // MARK: - Actions
